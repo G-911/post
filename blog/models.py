@@ -7,7 +7,7 @@ class Post(models.Model):
     tittle = models.CharField(max_length=30)
     author = models.ForeignKey(
         "auth.User",
-        on_delete = models.CASCADE,
+        on_delete=models.CASCADE,
     )
 
     body = models.TextField()
