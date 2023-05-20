@@ -3,4 +3,7 @@
 {% block content %}
     <h2>{{ post.tittle }}</h2>
     <p>{{ post.boby }}</p>
+
+    <a href="{% url 'post_edit' post.pk %}">Editar este post</a>
+    <a href="{% url 'post_delete' post.pk %}">Borrar</a>
 {% endblock content %}
